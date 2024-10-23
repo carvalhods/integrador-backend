@@ -1,0 +1,16 @@
+{
+  "name": "integrador-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": ["gateway"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "David Carvalho",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.15.0"
+  }
+}

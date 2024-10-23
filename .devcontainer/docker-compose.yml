@@ -1,0 +1,38 @@
+services: 
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    volumes:
+      - ..:/app:cached
+    
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+
+    networks:
+      - integrador_network   
+
+    depends_on:
+      - db
+
+  db:
+    image: postgres:17
+    volumes:
+      - db_integrador:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    networks:
+      - integrador_network
+
+volumes:
+  db_integrador:
+
+networks:
+  integrador_network:  
+
+  
