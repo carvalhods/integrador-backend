@@ -10,8 +10,12 @@ services:
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
 
+    environment:
+      LANG: pt_BR.UTF-8
+      LC_CTYPE: pt_BR.UTF-8      
+
     networks:
-      - integrador_network   
+      - integrador_network 
 
     depends_on:
       - db
