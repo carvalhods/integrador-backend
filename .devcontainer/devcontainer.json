@@ -4,7 +4,7 @@
 	"name": "Integrador Backend",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",	
+	"service": "app-integrador",	
 	"workspaceFolder": "/app/",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -19,10 +19,10 @@
 		"vscode": {
 			"extensions": [
 				"dbaeumer.vscode-eslint",
-				"github.vscode-github-actions",
 				"bradlc.vscode-tailwindcss",
+				"Orta.vscode-jest",
 				"Prisma.prisma",
-				"Orta.vscode-jest"
+				"esbenp.prettier-vscode"
 			]
 		}
 	}

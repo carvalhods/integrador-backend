@@ -1,5 +1,5 @@
 services: 
-  app:
+  app-integrador:
     build:
       context: .
       dockerfile: Dockerfile
