@@ -1,6 +1,6 @@
 FROM node:20-slim AS base
 
-WORKDIR /app
+WORKDIR /integrador-back
 
 RUN cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 

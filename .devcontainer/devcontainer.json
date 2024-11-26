@@ -4,8 +4,8 @@
 	"name": "Integrador Backend",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app-integrador",	
-	"workspaceFolder": "/app/",
+	"service": "integrador-backend",	
+	"workspaceFolder": "/integrador-back/",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
