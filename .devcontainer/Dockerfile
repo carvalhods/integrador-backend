@@ -20,7 +20,4 @@ RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(whic
 # Bash auto completion
 RUN echo 'source /etc/profile.d/bash_completion.sh' >> "$HOME/.bashrc"
 
-# NestJS
-RUN npm i -g @nestjs/cli
-
 EXPOSE 3000
