@@ -4,7 +4,7 @@
       "type": "node-terminal",
       "name": "Run Script: start:debug",
       "request": "launch",
-      "command": "pnpm run start:debug",
+      "command": "NODE_ENV=development pnpm run start:debug",
       "cwd": "${workspaceFolder}"
     }
   ]
